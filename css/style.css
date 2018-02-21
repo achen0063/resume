@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+.topNavBar li{
+    float: right;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+.logo{
+    float: left;
+}
+.topNavBar ul a{
+    font-size: 12px;
+    color: #B7B7B7;
+    border-bottom:7px solid transparent;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    border-top: 7px solid transparent;
+}
+.topNavBar ul a:hover{
+    border-bottom:3px solid #e06567;
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-family: "Arial Black";
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.logo .rs{
+    margin-right:4px;
+    color: #e6686a;
+}
+.logo .card{
+    color: #9A9DA2;
+}
+.topNavBar{
+    padding: 19px 16px 19px 16px;    
+}
