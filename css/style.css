@@ -244,9 +244,62 @@ main .button:hover{
     /* border算在盒模型里面 */
     padding-right: 30px;
 }
+.portfolio{
+    text-align: center;
+} 
+
 .portfolio li{
     float: left;
-    
+    margin: 0 30px;
+    cursor: pointer;
+}
+.portfolio nav{
+    text-align: center;
+    /* ol是内联元素，居中，但整个文字会靠右，右边的margin要去掉 */
+    display: inline-block;
+    vertical-align: top;
+    /* 为了让bar居中，把bar父元素变成行内 */
+}
+.portfolio li:first-child{
+    margin-left: 0;
+}
+.portfolio li:last-child{
+    margin-right: 0;
+}
+.topNavBar nav{
+    display: inline-block;
+    vertical-align: top;
+}
+.portfolio .bar{
+    height: 5px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.portfolio ol{
+    margin: 34px 0 0;
+    display: inline-block;
+    vertical-align: top/* display:inline-block必须加,不然会出现bug，盒子下方空隙会大一些。 */
+
+    /* margin: auto 0, 需要width才能居中 */
+}
+.portfolio .bar>.inner{
+    height: 100%;
+    border-radius: 2px;
+    background-color: #e6686a;
+    transition: 0.2s linear;
+}
+.portfolio .bar.status-1>.inner{
+    width: 20%;
+    margin-left: 0;
+}
+.portfolio .bar.status-2>.inner{
+    width: 30%;
+    margin-left: 70px;
+}
+.portfolio .bar.status-3>.inner{
+    width: 40%;
+    margin-left: 170px;
 }
 .skills li:nth-child(even){
     float: right;
@@ -256,4 +309,12 @@ main .button:hover{
     font-size: 14px;
     line-height: 1.1;
     padding-right: 30px;
+}
+.portfolio .works{
+    position: relative;
+    margin-bottom: 50px;
+}
+.portfolio .big,
+.portfolio .small{
+    position: absolute;
 }
