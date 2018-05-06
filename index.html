@@ -22,7 +22,7 @@
   <div  id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
   </div>
-  <div class="topNavBar">
+  <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a href="" class="logo">
       <span class="rs">RS</span><span class="card">card</span>
@@ -153,5 +153,15 @@
 <script>
 setTimeout(function(){ siteWelcome.classList.remove('active')},1000)
 
-  </script>
+window.onscroll = function(xx){
+  if(window.scrollY>0){
+    topNavBar.classList.add('slide')
+  }
+  else{
+    topNavBar.classList.remove('slide')
+  }
+}
+
+
+</script>
 </html>

@@ -12,10 +12,12 @@ hr{ border:none; border-top: 1px solid #DEDEDE; }
 .topNavBar-inner li{ float: right; margin-left: 17px; margin-right: 17px; }
 .topNavBar ul a:hover{ border-bottom:3px solid #e06567;}
 .topNavBar .logo{ font-size: 24px; font-family: "Arial Black"; border-top: 3px solid transparent; border-bottom: 3px solid transparent; }
+.topNavBar.slide{background-color: white;position: fixed; top:0; left: 0; width: 100%;
+padding: 22px 0;box-shadow: 0 0 10px rgba(0,0,0,0.25),color: #3d4451; z-index: 1;}
+.topNavBar{ padding: 19px 0px 19px 0px; position: fixed; top:0; left: 0; width: 100%; transition: all 1s}
+.topNavBar-inner{ padding: 0 16px; }
 .logo .rs{ margin-right:4px; color: #e6686a; }
 .logo .card{ color: #9A9DA2; }
-.topNavBar{ padding: 19px 0px 19px 0px; position: fixed; top:0; left: 0; width: 100%; }
-.topNavBar-inner{ padding: 0 16px; }
 .banner{ background-image:url(../rs-cover.jpg); height:515px; background-position: center; background-size: cover; }
 .banner .mask{ height:515px; background-color: rgba(0, 0, 0, 0.5) }
 .usercard{ max-width: 940px; margin-left: auto; margin-right: auto; background-color: white; box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5); }
